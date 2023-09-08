@@ -1,0 +1,55 @@
+.footer {
+    display: flex;
+    position: relative;
+    align-items: center;
+    background-color: get-color(mirage-blue);
+    width: calc(100% + 18vw);
+    left: -9vw;
+    padding: 20px 9vw;
+
+    .page__links {
+        color: get-color(light-san-juan-blue);
+
+        li:hover {
+            color: get-color(link-water-white);
+        }
+    }
+
+    &__socials {
+        display: flex;
+        justify-content: space-between;
+        margin-left: auto;
+        width: 100px;
+
+        a i {
+            font-size: 20px;
+            color: get-color(link-water-white);
+
+            &:hover {
+                color: get-color(dark-pink);
+                filter: brightness(1.5)
+            }
+        }
+    }
+
+    @include rwd(645) {
+        flex-direction: column;
+        padding: 40px 9vw;
+
+        .page__links {
+            margin: 15px 0 25px;
+            flex-direction: column;
+            align-items: center;
+
+            li {
+                color: get-color(link-water-white);
+                margin-bottom: 12px;
+                &:last-of-type { margin-bottom: 0 }
+            }
+        }
+
+        &__socials {
+            margin-left: 0;
+        }
+    }
+}
