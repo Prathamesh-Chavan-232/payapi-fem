@@ -1,4 +1,3 @@
-import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { Home, Pricing, About, Contact } from './mainPages';
 import { Navbar, CTA, Footer } from './components';

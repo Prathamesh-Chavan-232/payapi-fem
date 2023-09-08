@@ -40,4 +40,24 @@
             }
         }
     }
+    &--transparent-white-blue {
+            background-color: transparent;
+            border-color: get-color(white);
+            color: white;
+
+        &:hover {
+            background-color: get-color(mirage-blue);
+            border-color: get-color(mirage-blue);
+            color: white;
+        }
+
+        &.valid {
+            border-color: green;
+            color: green;
+
+            &:hover {
+                background-color: white;
+            }
+        }
+    }
 }

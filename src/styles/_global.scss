@@ -7,6 +7,10 @@
     }
 }
 
+::selection {
+  background: #22ffffff;
+}
+
 body {
     margin: 0 auto;
     overflow-x: hidden;
@@ -14,6 +18,13 @@ body {
     & > * {
         padding: 0 9vw;
     }
+}
+
+// Make footer sticky
+.App {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 button {

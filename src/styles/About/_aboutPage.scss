@@ -76,11 +76,9 @@
             border-top: 1px solid rgba(get-color(light-san-juan-blue), .5);
             border-bottom: 1px solid rgba(get-color(light-san-juan-blue), .5);
 
-            small { font-weight: 400 }
-
             .number {
                 @include h1();
-                color: get-color(dark-pink);
+                color: get-color(dark-yellow);
                 margin-top: 10px;
                 letter-spacing: 2px;
             }
