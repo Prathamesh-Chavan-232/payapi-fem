@@ -8,11 +8,11 @@
     transition: .15s;
 
     &--pink {
-        background-color: get-color(dark-pink);
-        border-color: get-color(dark-pink);
-        color: white;
+        background-color: get-color(dark-yellow);
+        border-color: get-color(dark-yellow);
+        color: black;
 
-        &:hover { 
+        &:hover {
             filter: brightness(1.1)
         }
     }

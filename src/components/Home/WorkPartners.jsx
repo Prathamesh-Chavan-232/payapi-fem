@@ -1,4 +1,3 @@
-import React from 'react';
 import { PartnersGrid, Button } from '../';
 
 const WorkPartners = () => (

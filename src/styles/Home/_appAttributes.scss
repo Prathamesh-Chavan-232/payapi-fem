@@ -22,7 +22,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        flex: 0 0 45%;      
+        flex: 0 0 45%;
     }
 
     &:nth-of-type(1) {
@@ -49,9 +49,9 @@
         }
 
         .app__attribute__image__container img {
-            max-width: 100%; 
+            max-width: 100%;
             max-height: 500px;
-            transform: scale(1.5) translateX(3.5%) translateY(4%); 
+            transform: scale(1.5) translateX(3.5%) translateY(4%);
         }
     }
 
@@ -94,7 +94,7 @@
                 position: absolute;
                 width: 10px; height: 84%;
                 top: 8%; left: calc(53px - 5px);
-                background-color: rgba(get-color(dark-pink), .5);
+                background-color: rgba(get-color(dark-yellow), .5);
                 z-index: -1;
             }
         }
@@ -117,7 +117,7 @@
     @include rwd(1000) {
         flex-direction: column-reverse;
 
-        &:nth-of-type(1) { 
+        &:nth-of-type(1) {
             flex-direction: column-reverse;
             margin-bottom: 50px;
 

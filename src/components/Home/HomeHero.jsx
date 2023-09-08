@@ -1,4 +1,3 @@
-import React from 'react';
 import { Link } from 'react-router-dom';
 import { DemoForm } from '../';
 import phone from '../../images/home/desktop/illustration-phone-mockup.svg';

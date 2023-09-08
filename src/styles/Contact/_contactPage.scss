@@ -63,10 +63,10 @@
                     i { display: none }
 
                     &.checked {
-                        background-color: get-color(dark-pink);
+                        background-color: get-color(dark-yellow);
 
-                        i { 
-                            display: flex; 
+                        i {
+                            display: flex;
                             color: white;
                             font-size: 11px;
                             margin: auto;

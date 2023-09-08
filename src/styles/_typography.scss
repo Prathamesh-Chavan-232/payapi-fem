@@ -3,7 +3,8 @@
 
 html {
     font-family: 'Public Sans', sans-serif;
-    color: get-color(san-juan-blue);
+    background-color: get-color(link-water-blue);
+    color: #fff;
     font-weight: 500;
     font-size: 15px;
     line-height: 1.86;
@@ -43,8 +44,8 @@ html {
     @include rwd(700) { font-size: 1.8em }
 }
 
-h1, 
-h2, 
+h1,
+h2,
 h3 { font-family: 'DM Serif Display', serif }
 
 

@@ -1,4 +1,5 @@
 .hero {
+    // background-color: get-color(link-water-blue);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -11,7 +12,7 @@
             font-size: calc(2.5em + 2vw);
         }
 
-        &__contact-us { 
+        &__contact-us {
             display: flex;
 
             a {
