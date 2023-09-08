@@ -20,13 +20,6 @@ body {
     }
 }
 
-// Make footer sticky
-.App {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-}
-
 button {
     background-color: transparent;
 }
@@ -35,4 +28,16 @@ button {
     @media (max-width: $screen+'px') {
         @content;
     }
+}
+
+// Make footer sticky
+.App {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.logo {
+    font-size: 3.2em;
+    font-weight: 500;
+    @include rwd(700) { font-size: 2em }
 }

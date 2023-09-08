@@ -1,12 +1,10 @@
-import React from 'react';
 import { Link } from 'react-router-dom';
 import { PageLinks } from '../';
-import logo from '../../images/shared/desktop/logo--white.svg';
 
 const Footer = () => (
     <div className="footer">
         <Link to="/">
-            <img className="footer__logo" src={logo} alt="PayAPI company logo" />
+            <h1 className='logo'>Hectec</h1>
         </Link>
         <PageLinks />
         <div className="footer__socials">

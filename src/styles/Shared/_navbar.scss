@@ -1,10 +1,4 @@
 .navbar {
-    .logo {
-        font-size: 3.2em;
-        font-weight: 500;
-        @include rwd(700) { font-size: 2em }
-    }
-
     display: flex;
     position: relative;
     align-items: flex-end;
