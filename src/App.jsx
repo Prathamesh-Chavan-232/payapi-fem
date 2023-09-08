@@ -1,6 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { Home, Pricing, About, Contact, Career } from './mainPages';
-import { Navbar, CTA, Footer } from './components';
+import { Navbar, Cta, Footer } from './components';
 import './App.scss';
 
 const App = () => (
@@ -14,7 +14,7 @@ const App = () => (
         <Route exact path="/career" element={<Career />} />
         <Route exact path="/contact" element={<Contact />} />
       </Routes>
-      <CTA />
+      <Cta />
       <Footer />
     </div>
   </Router>

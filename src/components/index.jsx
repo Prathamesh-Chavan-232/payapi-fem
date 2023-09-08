@@ -18,6 +18,6 @@ export { default as Navbar } from './Shared/Navbar';
 export { default as PageLinks } from './Shared/PageLinks';
 export { default as DemoForm } from './Shared/DemoForm';
 export { default as PartnersGrid } from './Shared/PartnersGrid';
-export { default as CTA } from './Shared/CTA';
+export { default as Cta } from './Shared/CTA';
 export { default as Footer } from './Shared/Footer';
 export { default as Button } from './Shared/Button';

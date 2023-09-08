@@ -35,6 +35,7 @@
 
     @include rwd(645) {
         flex-direction: column;
+        align-items: center;
         padding: 40px 9vw;
 
         .page__links {
