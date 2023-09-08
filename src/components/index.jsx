@@ -1,4 +1,4 @@
-// Home 
+// Home
 export { default as HomeHero } from './Home/HomeHero';
 export { default as WorkPartners } from './Home/WorkPartners';
 export { default as AppAttributes } from './Home/AppAttributes';
@@ -6,6 +6,7 @@ export { default as Card } from './Home/AppAttributeCard';
 
 // About
 export { default as AboutHeader } from './About/AboutHeader';
+export { default as CareerHeader } from './About/CareerHeader';
 export { default as AboutCompany } from './About/AboutCompanyCard';
 export { default as AboutBottom } from './About/AboutBottom';
 

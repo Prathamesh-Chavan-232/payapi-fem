@@ -1,4 +1,3 @@
-import React from 'react';
 import { AboutHeader, AboutBottom } from '../components';
 import imageDesktop from '../images/about/desktop/image-team-members.jpg';
 import imageMobile from '../images/about/mobile/image-team-members.jpg';

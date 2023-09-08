@@ -37,7 +37,11 @@ button {
     flex-direction: column;
 }
 .logo {
-    font-size: 3.2em;
     font-weight: 500;
+    font-size: 3.2em;
+    @include rwd(700) { font-size: 2em }
+}
+.alt--title {
+    font-size: 3.2em;
     @include rwd(700) { font-size: 2em }
 }

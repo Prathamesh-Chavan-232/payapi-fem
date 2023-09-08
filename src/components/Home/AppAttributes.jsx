@@ -27,18 +27,17 @@ const AppAttributes = () => {
     return (
         <main className="home__main">
             {
-                attributeList.map((item, i) => {
-                    return <div key={i} className="app__attribute">
-                        <div className="app__attribute__textbox">
-                            <h2 className="app__attribute__textbox__heading">{item.heading}</h2>
-                            <p className="app__attribute__textbox__subheading">{item.subheading}</p>
-                        </div>
-                        <div className="app__attribute__image__container">
-                            <img src={item.img} alt="iPhones showing simple UI of PayAPI mobile app" />
-                        </div>
-                    </div>
-                })
-            }
+                attributeList.map((item, i) =>
+            <div key={i} className="app__attribute">
+                <div className="app__attribute__textbox">
+                    <h2 className="app__attribute__textbox__heading">{item.heading}</h2>
+                    <p className="app__attribute__textbox__subheading">{item.subheading}</p>
+                </div>
+                <div className="app__attribute__image__container">
+                    <img src={item.img} alt="Terminal showing simple lines of code" />
+                </div>
+            </div>
+                )}
             <div className="app__attribute__grid">
                 <Card icon={image.finances} heading="Personal Finances" subheading={financeText} />
                 <Card icon={image.banking} heading="Banking & Coverage" subheading={bankingText} />
