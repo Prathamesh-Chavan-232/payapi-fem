@@ -68,13 +68,17 @@
     &__grid {
         display: flex;
         justify-content: space-between;
-        margin: 150px 0 25px;
+        margin: 150px 25px;
 
         .grid__card {
             width: calc(92% / 3);
             text-align: center;
 
-            &__heading { margin: 15px 0 }
+            &__heading {
+                font-size: 32px;
+                margin: 15px 0
+
+            }
 
             &__subheading { font-weight: 400 }
         }

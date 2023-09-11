@@ -19,13 +19,19 @@ const AppAttributes = () => {
             img: image.simple,
         }
     ]
-    let financeText = "40 million/month marketing Spent";
-    let bankingText = "15-20% Customer Retention";
-    let newText = "5 Average Conversion";
-    let consumerText = "10+ Average ROAS";
+    let financeText = "Marketing spent";
+    let bankingText = "Customer Retention";
+    let newText = "Average Conversion";
+    let consumerText = "Average ROAS";
 
     return (
         <main className="home__main">
+            <div className="app__attribute__grid">
+                <Card icon={image.finances} heading="40 million/month" subheading={financeText} />
+                <Card icon={image.banking} heading="15-20%" subheading={bankingText} />
+                <Card icon={image.banking} heading="5+" subheading={newText} />
+                <Card icon={image.consumer} heading="10+" subheading={consumerText} />
+            </div>
             {
                 attributeList.map((item, i) =>
             <div key={i} className="app__attribute">
@@ -38,12 +44,6 @@ const AppAttributes = () => {
                 </div>
             </div>
                 )}
-            <div className="app__attribute__grid">
-                <Card icon={image.finances} heading="Personal Finances" subheading={financeText} />
-                <Card icon={image.banking} heading="Banking & Coverage" subheading={bankingText} />
-                <Card icon={image.banking} heading="Banking & Coverage" subheading={newText} />
-                <Card icon={image.consumer} heading="Consumer Payments" subheading={consumerText} />
-            </div>
         </main>
     )
 }
