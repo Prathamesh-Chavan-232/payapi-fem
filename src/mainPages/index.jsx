@@ -1,4 +1,5 @@
 export { default as Home } from './Home';
+export { default as AltHome } from './AltHome';
 export { default as Pricing } from './Pricing';
 export { default as About } from './About';
 export { default as Career } from './Career';
