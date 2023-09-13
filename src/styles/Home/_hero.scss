@@ -26,7 +26,6 @@
     &__image__container {
         display: flex;
     }
-
     @include rwd(900) {
         .demo__form {
             flex-direction: column;
