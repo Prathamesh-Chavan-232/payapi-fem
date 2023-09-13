@@ -1,6 +1,6 @@
 .contact {
     padding: 100px 9vw;
-    background-color: get-color(link-water-blue);
+    // background-color: get-color(link-water-blue);
     min-height: 100vh;
     &__heading {
         margin-bottom: 75px;
@@ -22,12 +22,12 @@
                 width: 100%;
                 font-family: inherit;
                 border: 0;
-                border-bottom: 1px solid white;
+                border-bottom: 1px solid get-color(dark-black);
                 background-color: transparent;
                 padding: 20px 0 20px 25px;
                 &::placeholder {
                     opacity: .75;
-                    color: white;
+                    color: black;
                 }
 
                 &:focus-within {
