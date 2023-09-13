@@ -17,7 +17,7 @@
         padding: 12px 20px;
     }
 
-    @include rwd(715) {
+    @include rwd(850) {
         &__links, .btn--pink { display: none }
 
         &__links--mobile {
