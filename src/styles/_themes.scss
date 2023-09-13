@@ -11,6 +11,8 @@ $colors: (
     clr-bg-light: #fff,
     clr-bg-gray: hsl(240, 7%, 97%),
     clr-green: hsl(174, 38%, 47%),
+    clr-text-blue: #b5c7e9,
+
 );
 
 @function get-color($color) {

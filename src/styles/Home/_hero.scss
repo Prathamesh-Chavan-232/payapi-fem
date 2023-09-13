@@ -3,7 +3,7 @@
     justify-content: space-between;
     align-items: center;
     background-color: get-color(link-water-blue);
-    min-height: 70vh;
+    min-height: 65vh;
     color: white;
     &__textbox {
         flex: 0 0 50%;
@@ -11,6 +11,9 @@
         &__heading {
             font-size: calc(2.5em + 2vw);
             font-weight: 500;
+        }
+        &__subheading {
+            color: get-color(clr-text-blue);
         }
 
         &__contact-us {
