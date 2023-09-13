@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { PageLinks, Button } from '../';
 import open from '../../images/shared/mobile/menu.svg'
 import close from '../../images/shared/mobile/close.svg';
-import logo from '../../images/shared/desktop/logo.jpg'
+import logo from '../../images/shared/desktop/logo-blue.svg'
 
 const Navbar = () => {
     const [navDeployed, setNavDeployed] = useState(false);
