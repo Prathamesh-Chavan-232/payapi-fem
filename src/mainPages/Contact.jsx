@@ -6,10 +6,13 @@ const Contact = () => (
         </h1>
         <main className="contact__main">
             <Form />
+    {/*
             <div className="contact__investors__grid">
                 <h3 className="contact__investors__grid__heading">Join the thousands of innovators already building with us</h3>
-                <PartnersGrid white={true} />
+        <PartnersGrid white={true} />
+
             </div>
+        */}
         </main>
     </div>
 )
