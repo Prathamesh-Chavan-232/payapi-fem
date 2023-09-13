@@ -1,7 +1,7 @@
 import { Form, PartnersGrid } from '../components';
 
 const Contact = () => (
-    <div className="page page--contact"> <h1 className="contact__heading">
+    <div className="page contact"> <h1 className="contact__heading">
             Submit a help request and we’ll get in touch shortly.
         </h1>
         <main className="contact__main">
