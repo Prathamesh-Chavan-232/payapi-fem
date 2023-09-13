@@ -1,9 +1,11 @@
 .navbar {
+    padding: 20px 9vw;
+    background-color: get-color(link-water-blue);
+    color:white;
     display: flex;
     position: relative;
+    justify-content: space-between;
     align-items: flex-end;
-    height: 80px;
-    margin-bottom: 60px;
 
     &__links--mobile {
         display: none;

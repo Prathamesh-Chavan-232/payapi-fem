@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { PageLinks, Button } from '../';
 import open from '../../images/shared/mobile/menu.svg'
 import close from '../../images/shared/mobile/close.svg';
+import logo from '../../images/shared/desktop/logo.jpg'
 
 const Navbar = () => {
     const [navDeployed, setNavDeployed] = useState(false);
@@ -17,7 +18,7 @@ const Navbar = () => {
     }
 
     const handleNavClose = () => {
-        setTimeout(function() {
+        setTimeout(function () {
             navBtn.current.classList.remove('change');
         }, 850);
     }
@@ -26,9 +27,9 @@ const Navbar = () => {
         let mobileNavLinks = [...document.querySelectorAll('.page__link')].slice(3, 6);
         let linksPlusBtn = mobileNavLinks.concat(document.querySelectorAll('.btn--pink')[1]);
 
-        linksPlusBtn.forEach(item => item.addEventListener('click', () => {
-            closeAll();
-        }))
+        // linksPlusBtn.forEach(item => item.addEventListener('click', () => {
+        //     closeAll();
+        // }))
     }
 
     const closeAll = () => {
@@ -39,12 +40,12 @@ const Navbar = () => {
     return (
         <div className="navbar">
             <Link to="/" onClick={closeAll}>
-                <h1 className='logo'>Hectec</h1>
+                <img className="logo" src={logo} alt="" />
             </Link>
             <div className="navbar__links">
                 <PageLinks />
             </div>
-            <Button text="Schedule a Demo" href="/contact" color="pink" />
+            {/*<Button text="Schedule a Demo" href="/contact" color="pink" />*/}
             <div className={`navbar__links--mobile ${navDeployed ? 'deployed' : ''}`} onClick={handleMobileNavClose}>
                 <hr />
                 <PageLinks />
@@ -57,7 +58,7 @@ const Navbar = () => {
                 aria-label="Button for mobile menu deployment"
                 onClick={() => setNavDeployed(!navDeployed)}
             >
-                <img className="open" src={open} alt="Hamburger icon" onClick={handleNavOpen}/>
+                <img className="open" src={open} alt="Hamburger icon" onClick={handleNavOpen} />
                 <img className={`close ${!navDeployed ? 'spin' : ''}`} src={close} alt="X shape" onClick={handleNavClose} />
             </a>
         </div>

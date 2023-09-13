@@ -1,10 +1,10 @@
 .hero {
-    // background-color: get-color(link-water-blue);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: -40px;
-
+    background-color: get-color(link-water-blue);
+    min-height: 70vh;
+    color: white;
     &__textbox {
         flex: 0 0 50%;
 

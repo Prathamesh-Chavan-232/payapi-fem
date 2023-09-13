@@ -1,10 +1,11 @@
 import { Link } from 'react-router-dom';
 import { PageLinks } from '../';
+import logo from '../../images/shared/desktop/logo.jpg'
 
 const Footer = () => (
     <div className="footer">
         <Link to="/">
-            <h1 className='logo'>Hectec</h1>
+            <img className="logo" src={logo} alt="" />
         </Link>
         <PageLinks />
     </div>

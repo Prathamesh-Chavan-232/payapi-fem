@@ -1,5 +1,5 @@
-import { HomeHero, WorkPartners, AppAttributes } from '../components';
-// import graph from "@/assets/graph.jpg";
+import { HomeHero } from '../components';
+import graph from "../images/shared/desktop/graph.jpg";
 
 const list = [
     "40 million/month marketing Spent",
@@ -10,10 +10,10 @@ const list = [
 
 export default function Home() {
     return (
-        <>
+        <div className="content--padding">
         <HomeHero />
         {/* Services */}
-            <div className={`content__padding services`}>
+            <div className={`services`}>
                 <div className="container">
                     <h2>Explore, Experience, Excel</h2>
                     <p>
@@ -68,7 +68,7 @@ export default function Home() {
                     );
                 })}
             </div>
-            <div className={`info__section content__padding`}>
+            <div className={`info__section content--padding`}>
                 <div className="row">
                     <div className="left">
                         <button className="btn">Email + SMS Marketing</button>
@@ -81,11 +81,11 @@ export default function Home() {
                     </div>
                     <img
                         alt=''
-                        src={""}
+                        src={graph}
                         className={`container__img img`}
                     />
                 </div>
-                <div className={`"row" row__reverse`}>
+                <div className="row row__reverse">
                     <div className="left">
                         <button className="btn">Email + SMS Marketing</button>
                         <h2>Personalize and reach the right people</h2>
@@ -97,12 +97,12 @@ export default function Home() {
                     </div>
                     <img
                         alt=''
-                        src={""}
-                        className={`container__img "img"`}
+                        src={graph}
+                        className={`container__img img`}
                     />
                 </div>
             </div>
-        </>
+        </div>
     );
 }
 
