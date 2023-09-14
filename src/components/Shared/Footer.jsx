@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import { PageLinks } from '../';
-import logo from '../../images/shared/desktop/logo.svg'
+import logo from '../../images/shared/desktop/logo-footer.svg'
 
 const Footer = () => (
     <div className="footer">
