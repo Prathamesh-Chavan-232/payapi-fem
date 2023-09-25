@@ -1,6 +1,7 @@
+import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import { AltHome, Pricing, About, Contact, Career } from './mainPages';
-import { Navbar, Cta, Footer } from './components';
+import { Home, Pricing, About, Contact } from './mainPages';
+import { Navbar, CTA, Footer } from './components';
 import './App.scss';
 
 const App = () => (
@@ -8,15 +9,15 @@ const App = () => (
     <div className="App">
       <Navbar />
       <Routes>
-        <Route exact path="/" element={<AltHome />} />
+        <Route exact path="/" element={<Home />} />
         <Route exact path="/pricing" element={<Pricing />} />
         <Route exact path="/about" element={<About />} />
-        <Route exact path="/career" element={<Career />} />
-        <Route exact path="/contact" element={<Contact />} />
-      </Routes>
+      <Route exact path="/contact" element={<Contact />} />
+    </Routes>
+      <CTA />
       <Footer />
     </div>
-  </Router>
+</Router>
 );
 
 export default App;

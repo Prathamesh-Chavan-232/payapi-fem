@@ -1,21 +1,20 @@
 * {
     box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+    margin: 0; padding: 0;
 
     &:focus {
         outline: 0;
     }
 }
 
-::selection {
-  background: #22ffffff;
-}
-
 body {
+    max-width: 1900px;
     margin: 0 auto;
     overflow-x: hidden;
 
+    & > * {
+        padding: 0 9vw;
+    }
 }
 
 button {
@@ -26,25 +25,4 @@ button {
     @media (max-width: $screen+'px') {
         @content;
     }
-}
-
-// Make footer sticky
-.App {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-}
-
-.content--padding {
-
-    & > * {
-        padding: 0 9vw;
-    }
-}
-.logo {
-    width:90px;
-}
-.alt--title {
-    font-size: 3.2em;
-    @include rwd(700) { font-size: 2em }
 }

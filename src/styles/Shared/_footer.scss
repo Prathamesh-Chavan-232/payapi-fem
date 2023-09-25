@@ -1,10 +1,11 @@
 .footer {
     display: flex;
     position: relative;
-    align-items: flex-end;
-    background-color: get-color(dark-black);
-    padding: 40px 9vw;
-    margin-top: auto;
+    align-items: center;
+    background-color: get-color(mirage-blue);
+    width: calc(100% + 18vw);
+    left: -9vw;
+    padding: 20px 9vw;
 
     .page__links {
         color: get-color(light-san-juan-blue);
@@ -33,8 +34,7 @@
 
     @include rwd(645) {
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        padding: 40px 9vw;
 
         .page__links {
             margin: 15px 0 25px;

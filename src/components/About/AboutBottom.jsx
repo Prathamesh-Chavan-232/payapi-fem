@@ -1,3 +1,4 @@
+import React from 'react';
 import { AboutCompany } from '../';
 
 const AboutBottom = () => (

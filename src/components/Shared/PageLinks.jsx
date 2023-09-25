@@ -1,7 +1,8 @@
+import React from 'react';
 import { Link } from 'react-router-dom';
 
 const PageLinks = () => {
-    const links = ['about', 'career','team', 'contact'];
+    const links = ['pricing', 'about', 'contact'];
 
     return (
         <ul className="page__links">

@@ -1,11 +1,9 @@
 .navbar {
-    padding: 20px 9vw;
-    background-color: get-color(link-water-blue);
-    color:white;
     display: flex;
     position: relative;
-    justify-content: space-between;
-    align-items: flex-end;
+    align-items: center;
+    height: 92px;
+    margin-bottom: 60px;
 
     &__links--mobile {
         display: none;
@@ -14,10 +12,10 @@
 
     .btn--pink {
         margin-left: auto;
-        padding: 12px 20px;
+        padding: 12px 20px; 
     }
 
-    @include rwd(850) {
+    @include rwd(715) {
         &__links, .btn--pink { display: none }
 
         &__links--mobile {
@@ -25,11 +23,11 @@
             position: fixed;
             top: 0; right: 0vw;
             width: 85vw; height: 100vh;
-            background-color: get-color(dark-black);
+            background-color: get-color(mirage-blue);
             padding: 92px 30px 0;
             transform: translateX(87vw);
             transition: .6s ease-in-out;
-            transition-delay: 300ms;
+            transition-delay: 450ms;
             z-index: 3;
 
             &.deployed {
@@ -50,15 +48,13 @@
 
                 li {
                     color: get-color(link-water-white);
+                    font-size: 20px;
                     margin-bottom: 20px;
                     &:last-of-type { margin-bottom: 0 }
-                    link {
-                        font-size: 32px;
-                    }
                 }
             }
 
-            .btn--pink {
+            .btn--pink { 
                 display: flex;
                 justify-content: center;
                 width: 100%;
@@ -76,28 +72,24 @@
             height: 60px; width: 60px;
             z-index: 5;
             cursor: pointer;
-            color: white;
 
             & > * {
                 transition: .2s;
                 padding: 25px;
             }
+            
+            .open:hover { background-color: white }
 
-            .open:hover {
-                color: get-color(mirage-blue);
-                background-color: white;
-            }
-
-            .close {
+            .close { 
                 display: none;
 
                 &:hover {
-                    background-color: rgba(get-color(dark-yellow), .8);
+                    background-color: rgba(get-color(dark-pink), .8);
                 }
 
                 &.spin {
                     transform: rotate(360deg);
-                    transition: transform .5s;
+                    transition: transform .85s;
                 }
             }
 

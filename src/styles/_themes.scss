@@ -1,20 +1,12 @@
 $colors: (
     dark-pink: hsl(337, 48%, 49%),
-    dark-yellow: hsl(38, 100%, 59%),
-    dark-black: hsl(222, 14%, 14%),
     link-water-white: hsl(220, 60%, 99%),
-    link-water-blue: hsl(219, 83%, 40%),
     san-juan-blue: hsl(207, 33%, 32%),
     mirage-blue: hsl(207, 27%, 15%),
     charm-pink: hsl(337, 60%, 64%),
-    light-san-juan-blue: hsl(207, 16%, 50%),
-    clr-bg-light: #fff,
-    clr-bg-gray: hsl(240, 7%, 97%),
-    clr-green: hsl(174, 38%, 47%),
-    clr-text-blue: #b5c7e9,
-
+    light-san-juan-blue: hsl(207, 16%, 50%)
 );
 
 @function get-color($color) {
 	@return map-get($colors, $color);
-}
+} 

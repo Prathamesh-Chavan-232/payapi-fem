@@ -1,9 +1,9 @@
-import { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import { PageLinks, Button } from '../';
+import logo from '../../images/shared/desktop/logo.svg';
 import open from '../../images/shared/mobile/menu.svg'
 import close from '../../images/shared/mobile/close.svg';
-import logo from '../../images/shared/desktop/logo-blue.svg'
 
 const Navbar = () => {
     const [navDeployed, setNavDeployed] = useState(false);
@@ -18,7 +18,7 @@ const Navbar = () => {
     }
 
     const handleNavClose = () => {
-        setTimeout(function () {
+        setTimeout(function() {
             navBtn.current.classList.remove('change');
         }, 850);
     }
@@ -26,10 +26,10 @@ const Navbar = () => {
     const handleMobileNavClose = () => {
         let mobileNavLinks = [...document.querySelectorAll('.page__link')].slice(3, 6);
         let linksPlusBtn = mobileNavLinks.concat(document.querySelectorAll('.btn--pink')[1]);
-
-        // linksPlusBtn.forEach(item => item.addEventListener('click', () => {
-        //     closeAll();
-        // }))
+        
+        linksPlusBtn.forEach(item => item.addEventListener('click', () => {
+            closeAll();
+        }))
     }
 
     const closeAll = () => {
@@ -40,25 +40,25 @@ const Navbar = () => {
     return (
         <div className="navbar">
             <Link to="/" onClick={closeAll}>
-                <img className="logo" src={logo} alt="" />
+                <img className="navbar__logo" src={logo} alt="PayAPI company logo" />
             </Link>
             <div className="navbar__links">
                 <PageLinks />
             </div>
-            {/*<Button text="Schedule a Demo" href="/contact" color="pink" />*/}
+            <Button text="Schedule a Demo" href="/contact" color="pink" />
             <div className={`navbar__links--mobile ${navDeployed ? 'deployed' : ''}`} onClick={handleMobileNavClose}>
                 <hr />
                 <PageLinks />
                 <Button text="Schedule a Demo" href="/contact" color="pink" />
             </div>
-            <a
+            <a 
                 href="#"
                 ref={navBtn}
-                className="navbar__links--mobile-btn"
-                aria-label="Button for mobile menu deployment"
+                className="navbar__links--mobile-btn" 
+                aria-label="Button for mobile menu deployment" 
                 onClick={() => setNavDeployed(!navDeployed)}
             >
-                <img className="open" src={open} alt="Hamburger icon" onClick={handleNavOpen} />
+                <img className="open" src={open} alt="Hamburger icon" onClick={handleNavOpen}/>
                 <img className={`close ${!navDeployed ? 'spin' : ''}`} src={close} alt="X shape" onClick={handleNavClose} />
             </a>
         </div>

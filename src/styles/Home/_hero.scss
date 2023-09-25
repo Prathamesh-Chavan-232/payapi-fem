@@ -2,21 +2,16 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: get-color(link-water-blue);
-    min-height: 65vh;
-    color: white;
+    margin-top: -40px;
+
     &__textbox {
         flex: 0 0 50%;
 
         &__heading {
             font-size: calc(2.5em + 2vw);
-            font-weight: 500;
-        }
-        &__subheading {
-            color: get-color(clr-text-blue);
         }
 
-        &__contact-us {
+        &__contact-us { 
             display: flex;
 
             a {
@@ -29,6 +24,7 @@
     &__image__container {
         display: flex;
     }
+
     @include rwd(900) {
         .demo__form {
             flex-direction: column;

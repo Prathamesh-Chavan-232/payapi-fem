@@ -1,8 +1,8 @@
-import { useState, useRef } from 'react';
+import React, { useState, useRef } from 'react';
 
 const Form = () => {
-    const [emailList, setEmailList] = useState(false);
-    const [validForm, setValidForm] = useState(false);
+    const [emailList, setEmailList] = useState(false);   
+    const [validForm, setValidForm] = useState(false); 
     const formElement = useRef();
 
     function isEmpty() {
@@ -17,7 +17,7 @@ const Form = () => {
                     input.classList.remove('invalid')
                     return () => clearTimeout(timeoutID)
                 }, 10000)
-
+                
             } else {
                 input.classList.remove('invalid')
             }
@@ -40,7 +40,7 @@ const Form = () => {
                 email.children[0].value === '' && email.classList.remove('invalid')
                 return () => clearTimeout(timeoutID)
             }, 10000)
-
+            
         } else {
             isEmpty(email.children[0].value.trim())
         }
@@ -55,12 +55,12 @@ const Form = () => {
 
         inputElements.forEach(input => input.addEventListener('focusin', () => {
             if (input.children[0].type !== 'email') {
-                input.classList.remove('invalid')
+                input.classList.remove('invalid') 
             } else if (input.children[0].type === 'email' && !validateEmail(input.children[0].value) && input.children[0].value !== '') {
                 inputElements[1].classList.add('invalid')
             } else {
                 input.classList.remove('invalid')
-            }
+            }   
         }))
 
         if (!inputElements.some(input => input.classList.contains('invalid'))) {
@@ -69,9 +69,9 @@ const Form = () => {
                 formElement.current.reset()
                 setValidForm(false)
             }, 1000)
-        }
+        }        
     }
-
+    
     return (
         <form className="contact__form" ref={formElement} onSubmit={handleFormSubmit}>
             <div className="contact__form__control">
@@ -118,10 +118,10 @@ const Form = () => {
                     <i className="fas fa-check" aria-label="checkmark" />
                 </span>
                 <small className={`email__list ${emailList ? 'checked' : ''}`} onClick={() => {setEmailList(!emailList)}}>
-                    Stay up-to-date with company announcements and updates.
+                    Stay up-to-date with company announcements and updates to our API
                 </small>
             </div>
-            <button className={`btn btn--transparent-white-blue ${validForm ? 'valid' : ''}`} type="submit">Submit</button>
+            <button className={`btn btn--transparent-blue ${validForm ? 'valid' : ''}`} type="submit">Submit</button>
         </form>
     )
 }
